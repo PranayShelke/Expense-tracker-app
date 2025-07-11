@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron text-center mt-5">
+  <h1 class="display-4">Welcome to Expense Tracker!</h1>
+  <p class="lead">Manage your expenses easily and effectively.</p>
+  <hr class="my-4">
+  <p>Track your spending, view insightful charts, and export your data to CSV.</p>
+  <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+  <a class="btn btn-success btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+</div>
+{% endblock %}
